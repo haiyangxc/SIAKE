@@ -1,7 +1,7 @@
 # SIAKE
 
-### Supersigular Isogeny based Authentecated Key Excahnge
-SIAKE is an authentecated key excahnge based on supersigular isogenies. 
+### Supersingular Isogeny based Authenticated Key Exchange
+SIAKE is an authenticated key exchange based on supersingular isogenies. 
 It is an implimentation of SIAKE_2 in [XXW+19]
 
 [XXW+19] Xiu Xu, Haiyang Xue, Kunpeng Wang, Man Ho Au, Song Tian: Strongly Secure Authenticated Key Exchange from Supersingular Isogenies. ASIACRYPT (1) 2019: 278-308.
