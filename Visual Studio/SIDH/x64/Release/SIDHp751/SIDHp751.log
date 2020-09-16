@@ -1,0 +1,24 @@
+﻿  fp_x64.c
+  P751.c
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\p751\p751_internal.h(55): warning C4005: “SECRETKEY_A_BYTES”: 宏重定义
+  d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\p751\p751_api.h(36): note: 参见“SECRETKEY_A_BYTES”的前一个定义
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\p751\p751_internal.h(56): warning C4005: “SECRETKEY_B_BYTES”: 宏重定义
+  d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\p751\p751_api.h(37): note: 参见“SECRETKEY_B_BYTES”的前一个定义
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(17): warning C4100: “s_byts”: 未引用的形参
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(43): warning C4189: “f”: 局部变量已初始化但不引用
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(80): warning C4189: “f”: 局部变量已初始化但不引用
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(138): warning C4189: “f”: 局部变量已初始化但不引用
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(190): warning C4189: “f”: 局部变量已初始化但不引用
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(277): warning C4189: “r_byts”: 局部变量已初始化但不引用
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(278): warning C4189: “randomstring”: 局部变量已初始化但不引用
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(316): warning C4100: “pkb_byts”: 未引用的形参
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(370): warning C4100: “ma_byts”: 未引用的形参
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(370): warning C4100: “pka_byts”: 未引用的形参
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(408): warning C4100: “ma”: 未引用的形参
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\sike.c(408): warning C4100: “mb_byts”: 未引用的形参
+  rng.c
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\random\rng.c(74): warning C4018: “<=”: 有符号/无符号不匹配
+d:\2019\算法竞赛\siake第二轮\siakep751+(2)_20191106\siakep751\src\random\rng.c(141): warning C4100: “security_strength”: 未引用的形参
+  fips202.c
+libcrypto.lib(libcrypto-1_1-x64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR 已在 libssl.lib(libssl-1_1-x64.dll) 中定义；已忽略第二个定义
+  SIDHp751.vcxproj -> D:\2019\算法竞赛\SIAKE第二轮\siakep751+(2)_20191106\siakep751\Visual Studio\SIDH\x64\Release\SIDHp751\P751.lib

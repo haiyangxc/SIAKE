@@ -1,0 +1,23 @@
+﻿  test_SIAKEp751.c
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\src\kex_api.h(29): warning C4005: “KEX_A_PUBLICBYTES”: 宏重定义
+  d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\src\kex_api.h(28): note: 参见“KEX_A_PUBLICBYTES”的前一个定义
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(39): warning C4047: “函数”:“unsigned __int64 *”与“unsigned __int64”的间接级别不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(39): warning C4024: “kex_init_a”: 形参和实参 2 的类型不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(39): warning C4024: “kex_init_a”: 形参和实参 4 的类型不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(39): warning C4024: “kex_init_a”: 形参和实参 6 的类型不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(40): warning C4047: “函数”:“unsigned __int64 *”与“unsigned __int64”的间接级别不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(40): warning C4024: “kex_init_b”: 形参和实参 2 的类型不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(40): warning C4024: “kex_init_b”: 形参和实参 4 的类型不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(40): warning C4024: “kex_init_b”: 形参和实参 6 的类型不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(70): warning C4047: “函数”:“unsigned __int64 *”与“unsigned __int64”的间接级别不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(70): warning C4024: “kex_send_b”: 形参和实参 2 的类型不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(70): warning C4024: “kex_send_b”: 形参和实参 8 的类型不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(70): warning C4024: “kex_send_b”: 形参和实参 10 的类型不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(78): warning C4047: “函数”:“unsigned __int64 *”与“unsigned __int64”的间接级别不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(78): warning C4024: “kex_resp_a”: 形参和实参 8 的类型不同
+d:\2019\算法竞赛\siake第二轮\代码\未修改接口参数p503-and-p964\siakep751\tests\test_sike.c(107): warning C4013: “system”未定义；假设外部返回 int
+  test_extras.c
+  正在生成代码
+  All 89 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  test-SIKEp751.vcxproj -> D:\2019\算法竞赛\SIAKE第二轮\代码\未修改接口参数p503-and-p964\siakep751\Visual Studio\SIDH\Release\test-SIAKEp751.exe
