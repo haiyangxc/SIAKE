@@ -11,3 +11,18 @@ https://eprint.iacr.org/2018/760
 https://sike.org/#implementation
 
 We use parameter from SIKE(https://sike.org/), a third round candidate of NIST post-quantum cryptography standardization.
+
+
+### QUICK INSTRUCTIONS:
+
+<SIAKEp#> refers to any of {SIAKEp434, SIAKEp503, SIAKEp610, SIAKEp751}.
+
+Pick a given scheme, and then do:
+
+$ cd <SIAKEp#>
+$ make clean
+$ make
+
+Testing and benchmarking results are obtained by running:
+
+$ ./sike/test_AKE
