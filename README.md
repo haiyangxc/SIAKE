@@ -28,5 +28,5 @@ $ make
 
 Testing and benchmarking results are obtained by running:
 
-$ ./sike/test_KEM
+$ ./sike/test_AKE
 
