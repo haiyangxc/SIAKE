@@ -68,30 +68,30 @@ endif
 CFLAGS=$(OPT) -std=gnu11 $(ADDITIONAL_SETTINGS) -D $(ARCHITECTURE) -D __NIX__ -D $(USE_OPT_LEVEL) $(MULX) $(ADX)
 LDFLAGS=-lm
 ifeq "$(USE_OPT_LEVEL)" "_GENERIC_"
-	EXTRA_OBJECTS_751=objs751/fp_generic.o
+	EXTRA_OBJECTS_503=objs503/fp_generic.o
 else ifeq "$(USE_OPT_LEVEL)" "_FAST_"
 ifeq "$(ARCHITECTURE)" "_AMD64_"
-	EXTRA_OBJECTS_751=objs751/fp_x64.o objs751/fp_x64_asm.o
+	EXTRA_OBJECTS_503=objs503/fp_x64.o objs503/fp_x64_asm.o
 endif
 endif
-OBJECTS_751=objs751/P751.o $(EXTRA_OBJECTS_751) objs/random.o objs/fips202.o
+OBJECTS_503=objs503/P503.o $(EXTRA_OBJECTS_503) objs/random.o objs/fips202.o
 
-all: lib751 tests
+all: lib503 tests
 
-objs751/%.o: P751/%.c
+objs503/%.o: P503/%.c
 	@mkdir -p $(@D)
 	$(CC) -c $(CFLAGS) $< -o $@
 
 ifeq "$(USE_OPT_LEVEL)" "_GENERIC_"     
-    objs751/fp_generic.o: P751/generic/fp_generic.c
-	    $(CC) -c $(CFLAGS) P751/generic/fp_generic.c -o objs751/fp_generic.o
+    objs503/fp_generic.o: P503/generic/fp_generic.c
+	    $(CC) -c $(CFLAGS) P503/generic/fp_generic.c -o objs503/fp_generic.o
 else ifeq "$(USE_OPT_LEVEL)" "_FAST_"
 ifeq "$(ARCHITECTURE)" "_AMD64_"        
-	objs751/fp_x64.o: P751/AMD64/fp_x64.c
-		$(CC) -c $(CFLAGS) P751/AMD64/fp_x64.c -o objs751/fp_x64.o
+	objs503/fp_x64.o: P503/AMD64/fp_x64.c
+		$(CC) -c $(CFLAGS) P503/AMD64/fp_x64.c -o objs503/fp_x64.o
 
-	objs751/fp_x64_asm.o: P751/AMD64/fp_x64_asm.S
-		$(CC) -c $(CFLAGS) P751/AMD64/fp_x64_asm.S -o objs751/fp_x64_asm.o
+	objs503/fp_x64_asm.o: P503/AMD64/fp_x64_asm.S
+		$(CC) -c $(CFLAGS) P503/AMD64/fp_x64_asm.S -o objs503/fp_x64_asm.o
 endif
 endif
 
@@ -102,14 +102,14 @@ objs/random.o: random/random.c
 objs/fips202.o: sha3/fips202.c
 	$(CC) -c $(CFLAGS) sha3/fips202.c -o objs/fips202.o
 
-lib751: $(OBJECTS_751)
-	rm -rf lib751 sike
-	mkdir lib751 sike
-	$(AR) lib751/libsike.a $^
-	$(RANLIB) lib751/libsike.a
+lib503: $(OBJECTS_503)
+	rm -rf lib503 sike
+	mkdir lib503 sike
+	$(AR) lib503/libsike.a $^
+	$(RANLIB) lib503/libsike.a
 
-tests: lib751
-	$(CC) $(CFLAGS) -L./lib751 tests/test_SIKEp751.c tests/test_extras.c -lsike $(LDFLAGS) -o sike/test_AKE $(ARM_SETTING)
+tests: lib503
+	$(CC) $(CFLAGS) -L./lib503 tests/test_SIKEp503.c tests/test_extras.c -lsike $(LDFLAGS) -o sike/test_AKE $(ARM_SETTING)
 
 # AES
 AES_OBJS=objs/aes.o objs/aes_c.o
@@ -125,5 +125,5 @@ check: tests
 .PHONY: clean
 
 clean:
-	rm -rf *.req objs751* objs lib751* sike 
+	rm -rf *.req objs503* objs lib503* sike 
 
