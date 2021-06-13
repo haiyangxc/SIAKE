@@ -21,10 +21,12 @@ We use parameter from SIKE, a third round candidate of NIST post-quantum cryptog
 Pick a given scheme, and then do:
 
 $ cd <SIAKEp#>
+
 $ make clean
+
 $ make
 
 Testing and benchmarking results are obtained by running:
 
-$ ./sike/test_KEM
+$ ./sike/test_AKE
 
